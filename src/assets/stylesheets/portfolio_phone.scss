@@ -1,0 +1,174 @@
+// ------------------------ Phone ------------------------ //
+@media only screen and (max-width: 767px) {
+  .portfolio-header-container {
+    padding: 10px 0;
+
+    .material-icons {
+      display: none !important;
+    }
+    .portfolio-header-name {
+      font-size: 24px;
+      display: block;
+      text-align: center;
+    }
+    .portfolio-header-pos {
+      font-size: 14px;
+      display: block;
+      text-align: center;
+      top: 0;
+    }
+    .portfolio-header-date {
+      display: none;
+      color: grey;
+      font-size: 10px;
+      right: 10px;
+      top: 70px;
+    }
+    .portfolio-header-time {
+      color: grey;
+      font-size: 10px;
+      right: 5px;
+      top: 60px;
+    }
+  }
+  .portfolio-tab {
+    > div > div {
+      font-size: 12px;
+      &:hover {
+        font-size: 110% !important;
+      }
+    }
+  }
+  .portfolio-web-message {
+    width: 100%;
+    min-height: 170px;
+    box-shadow: 0 1px 5px #888888;
+    .portfolio-message-body {
+      width: 80%;
+      font-size: 12px;
+    }
+  }
+  .portfolio-intro-container {
+    border-radius: 30px;
+    margin: 20px 10px;
+    padding: 20px 20px;
+
+    .portfolio-intro-general {
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 40px;
+      .portfolio-general-title {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+    .portfolio-intro-experience {
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 40px;
+      .portfolio-experience-title {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      .portfolio-experience-period {
+        margin-bottom: 20px;
+      }
+      .portfolio-experience-company  {
+        font-size: 120%;
+      }
+      .portfolio-experience-info > ul {
+        margin-top: 2em;
+      }
+    }
+    .portfolio-intro-skill {
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 40px;
+      .portfolio-skill-title {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+    .portfolio-intro-education {
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 40px;
+      .portfolio-education-title {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      .portfolio-education-school {
+        margin-left: 0;
+      }
+    }
+    .portfolio-intro-language {
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 40px;
+      .portfolio-language-title {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      .portfolio-language-detail {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .portfolio-projects-individual {
+    .portfolio-individual-title {
+      font-size: 20px;
+      margin: 40px;
+    }
+  }
+  .portfolio-ios-icon {
+    border-radius: 35px;
+    margin: 0 15px 20px;
+    height: 120px;
+    width: 120px;
+  }
+  .icon-hover:hover {
+    margin: 0 12px 14px;
+    height: 126px;
+    width: 126px;
+  }
+  .portfolio-projects-details {
+    border-radius: 30px;
+    margin: 20px 10px;
+    padding: 30px 10px 80px;
+    .portfolio-details-info {
+      font-size: 12px;
+      word-wrap: break-word;
+    }
+    .portfolio-details-caption {
+      margin: 60px 0 20px;
+      font-size: 12px;
+    }
+    .portfolio-details-scenes {
+      .portfolio-details-scene {
+        display: none;
+      }
+    }
+    .portfolio-details-image {
+      width: 100%;
+      margin: 0;
+    }
+    .slick-slider {
+      width: 80%;
+      margin-bottom: 40px;
+    }
+    .slick-slide {
+      width: 100%;
+      min-height: 355px;
+    }
+    .slick-dots {
+      bottom: -35px;
+    }
+  }
+  .portfolio-contact {
+    font-size: 20px;
+    margin: 50px 20px;
+  }
+  .portfolio-button {
+    margin: 0 10px 20px;
+  }
+}
