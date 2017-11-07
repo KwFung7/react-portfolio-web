@@ -85,7 +85,7 @@ class PortfolioProjects extends React.Component {
                       index === 0 &&
                         <div className = "portfolio-details-scenes">
                           {
-                            scenes.map((scene , index) => 
+                            scenes.map((scene , index) =>
                               <img key={`scene-${index + 1}`} className = "portfolio-details-scene" src={`/images/${scene}`} alt={scene} />
                             )
                           }

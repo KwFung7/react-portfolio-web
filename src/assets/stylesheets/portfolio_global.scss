@@ -31,7 +31,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('../images/wallpaper.jpg');
+  background-image: url('assets/images/wallpaper.jpg');
   user-select: none;
   overflow-y: hidden;
 }
@@ -243,10 +243,10 @@ hr {
   cursor: pointer;
 }
 .arrofly {
-  background-image: url('../images/arrofly-icon.png');
+  background-image: url('assets/images/arrofly-icon.png');
 }
 .sanguosha-data {
-  background-image: url('../images/sanguosha-icon.png');
+  background-image: url('assets/images/sanguosha-icon.png');
 }
 .portfolio-projects-details {
   font-family: 'harabara';
