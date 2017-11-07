@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'kenvector_future';
+  src: url('assets/fonts/kenvector_future.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'stardust_adventure';
+  src: url('assets/fonts/stardust_adventure.ttf') format('truetype');    
+}
+
+@font-face {
+  font-family: 'queen_of_camelot';
+  src: url('assets/fonts/queen_of_camelot.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'queen_of_camelot_italic';
+  src: url('assets/fonts/queen_of_camelot_italic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'queen_of_camelot_outlines';
+  src: url('assets/fonts/queen_of_camelot_outlines.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'harabara';
+  src: url('assets/fonts/harabara.ttf') format('truetype');
+}
+
+@import './assets/stylesheets/portfolio_global.scss';
+@import './assets/stylesheets/portfolio_desktop.scss';
+@import './assets/stylesheets/portfolio_tablet.scss';
+@import './assets/stylesheets/portfolio_phone.scss';

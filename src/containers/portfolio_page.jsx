@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import PortfolioHeader from './portfolio_header'
 import PortfolioNav from './portfolio_nav'
 import store from './portfolio_store'
@@ -18,9 +17,4 @@ const PortfolioPage = props => {
   )
 }
 
-ReactDOM.render(
-  <MuiThemeProvider>
-    <PortfolioPage />
-  </MuiThemeProvider>,
-  document.body.appendChild(document.createElement('div'))
-)
+export default PortfolioPage

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import FontIcon from 'material-ui/FontIcon';
+import FontIcon from 'material-ui/FontIcon'
 import moment from 'moment'
 
 class PortfolioHeader extends React.Component {
