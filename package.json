@@ -3,9 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel": "^6.23.0",
+    "bootstrap": "^3.3.7",
+    "eslint": "^4.10.0",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
+    "material-ui": "0.19.1",
+    "material-ui-icons": "^1.0.0-beta.17",
+    "moment": "^2.19.1",
     "react": "^16.0.0",
+    "react-bootstrap": "^0.31.5",
     "react-dom": "^16.0.0",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "react-slick": "^0.15.4",
+    "react-swipeable-views": "^0.12.9",
+    "reactstrap": "^4.8.0",
+    "typed.js": "^2.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
