@@ -2,10 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 class PortfolioContact extends React.Component {
-  constructor(props) {
-    super(props)
 
-  }
   render() {
     const { contact = {} } = this.props
     const { email = '', phone = '' } = contact

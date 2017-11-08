@@ -51,6 +51,11 @@ hr {
   background-color: black;
   font-family: 'harabara';
   overflow-y: 'hidden';
+  .portfolio-header-face {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+  }
   .portfolio-header-name {
     color: white;
     letter-spacing: 6px;

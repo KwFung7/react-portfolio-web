@@ -2,15 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import moment from 'moment'
 import _ from 'lodash'
-import { FontIcon, RaisedButton } from 'material-ui'
+import { RaisedButton } from 'material-ui'
 import { purple500 } from 'material-ui/styles/colors'
 import ExpandLess from 'material-ui-icons/ExpandLess'
+import Stars from 'material-ui-icons/Stars'
 import Typed from 'typed.js'
 
 class PortfolioIntro extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+
   componentDidMount() {
     const { message } = this.props.intro
     const options = {
@@ -35,9 +34,7 @@ class PortfolioIntro extends React.Component {
     return (
       <div className = "portfolio-intro">
         <div className = "portfolio-web-message">
-          <FontIcon className = "material-icons" color = {purple500} >
-           stars
-          </FontIcon>
+          <Stars className = "material-icons" color = {purple500} />
           <div className = "portfolio-message-body" ><span ref={(el) => { this.el = el }}/></div>
         </div>
         <div className = "portfolio-intro-container">

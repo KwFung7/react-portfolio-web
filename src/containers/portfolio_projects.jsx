@@ -3,8 +3,7 @@ import Slider from 'react-slick'
 import PropTypes from 'prop-types'
 import ChevronLeftContainer from './chevron_left'
 import ChevronRightContainer from './chevron_right'
-import ExpandLess from 'material-ui-icons/ExpandLess'
-import { FontIcon, RaisedButton } from 'material-ui'
+import TouchApp from 'material-ui-icons/TouchApp'
 import { Row, Col } from 'react-bootstrap'
 
 
@@ -54,9 +53,7 @@ class PortfolioProjects extends React.Component {
           {
             this.state.open === 0 &&
               <div className = "portfolio-individual-title">
-                <FontIcon className = "material-icons" color = "rgba(30%, 30%, 30%, 1)" >
-                  touch_app
-                </FontIcon>
+                <TouchApp color='rgba(30%, 30%, 30%, 0.9)' />
                 <span> Click for details</span>
               </div>
           } 

@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import PortfolioHeader from './portfolio_header'
 import PortfolioNav from './portfolio_nav'
 import store from './portfolio_store'
