@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import ChevronLeftContainer from './chevron_left'
 import ChevronRightContainer from './chevron_right'
 import TouchApp from 'material-ui-icons/TouchApp'
-import { Row, Col } from 'react-bootstrap'
+import { Grid, Row, Col } from 'react-bootstrap'
 
 
 class PortfolioProjects extends React.Component {
@@ -60,60 +60,62 @@ class PortfolioProjects extends React.Component {
         </div>
         {
           this.state.open !== 0 &&
-            <Row className = "portfolio-projects-details">
-              <Col xsHidden sm={4} md={3} className = {`portfolio-ios-icon ${selected_data.short_name}`} ></Col>
-              <Col xs={12} sm={8} md={9} className = "portfolio-details-info">
-                <div className = "portfolio-info-name">
-                  Project name: {selected_data.name}
-                </div>
-                <div className = "portfolio-info-type">
-                  Project type: {selected_data.type}
-                </div>
-                <div className = "portfolio-info-site">
-                  <div>Project site: </div>
-                  <a href={selected_data.site} target="_blank">{selected_data.site}</a>
-                </div>
-              </Col>
-              {
-                details.map((detail, index) =>
-                  <Col key={index} xs={12} sm={12} className = "portfolio-details-box">
-                    <div className = "portfolio-details-caption">{detail}</div>
-                    {
-                      index === 0 &&
-                        <div className = "portfolio-details-scenes">
-                          {
-                            scenes.map((scene , index) =>
-                              <img key={`scene-${index + 1}`} className = "portfolio-details-scene" src={`/images/${scene}`} alt={scene} />
-                            )
-                          }
-                        </div>
-                    }
-                    {
-                      index === 0 &&
-                        <Slider
-                          dots = {true}
-                          infinite = {true}
-                          speed = {500}
-                          slidesToShow = {1}
-                          slidesToScroll = {1}
-                          prevArrow = {<ChevronLeftContainer />}
-                          nextArrow = {<ChevronRightContainer />}
-                        >
-                          {
-                            scenes.map((scene , index) => 
-                              <img key={`scene-${index + 1}`} src={`/images/${scene}`} alt={scene} />
-                            )
-                          } 
-                        </Slider>
-                    }
-                    {
-                      index !== 0 &&
-                        <img key={`image-${index}`} className = "portfolio-details-image" src={`/images/${code_images[index - 1]}`} alt={code_images[index - 1]} />
-                    }
-                  </Col>
-                )
-              }
-            </Row>
+            <Grid>
+              <Row className = "portfolio-projects-details">
+                <Col xsHidden sm={4} md={3} className = {`portfolio-ios-icon ${selected_data.short_name}`} ></Col>
+                <Col xs={12} sm={8} md={9} className = "portfolio-details-info">
+                  <div className = "portfolio-info-name">
+                    Project name: {selected_data.name}
+                  </div>
+                  <div className = "portfolio-info-type">
+                    Project type: {selected_data.type}
+                  </div>
+                  <div className = "portfolio-info-site">
+                    <div>Project site: </div>
+                    <a href={selected_data.site} target="_blank">{selected_data.site}</a>
+                  </div>
+                </Col>
+                {
+                  details.map((detail, index) =>
+                    <Col key={index} xs={12} sm={12} className = "portfolio-details-box">
+                      <div className = "portfolio-details-caption">{detail}</div>
+                      {
+                        index === 0 &&
+                          <div className = "portfolio-details-scenes">
+                            {
+                              scenes.map((scene , index) =>
+                                <img key={`scene-${index + 1}`} className = "portfolio-details-scene" src={`/images/${scene}`} alt={scene} />
+                              )
+                            }
+                          </div>
+                      }
+                      {
+                        index === 0 &&
+                          <Slider
+                            dots = {true}
+                            infinite = {true}
+                            speed = {500}
+                            slidesToShow = {1}
+                            slidesToScroll = {1}
+                            prevArrow = {<ChevronLeftContainer />}
+                            nextArrow = {<ChevronRightContainer />}
+                          >
+                            {
+                              scenes.map((scene , index) => 
+                                <img key={`scene-${index + 1}`} src={`/images/${scene}`} alt={scene} />
+                              )
+                            } 
+                          </Slider>
+                      }
+                      {
+                        index !== 0 &&
+                          <img key={`image-${index}`} className = "portfolio-details-image" src={`/images/${code_images[index - 1]}`} alt={code_images[index - 1]} />
+                      }
+                    </Col>
+                  )
+                }
+              </Row>
+            </Grid>
         }
       </div>
     )
