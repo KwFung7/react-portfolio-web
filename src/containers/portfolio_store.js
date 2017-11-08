@@ -4,7 +4,7 @@ const store = {
     position: 'Programmer'
   },
   intro: {
-    message: ['Welcome to my portfolio ! Current <b>responsive</b> portfolio web created with <b>Ruby on Rails</b> framework and <b>React</b> components on my own. Project page currently include my individual product details and part of source code.'],
+    message: ['Welcome to my portfolio ! Current <b>responsive</b> portfolio web created with <b>React app framework</b> and material-ui on my own. Project page currently include my individual product details and part of source code.'],
     general: {
       type: 'General',
       name: 'Kwan Ling Fung Felix (關凌鋒)',
