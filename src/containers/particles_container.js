@@ -6,7 +6,7 @@ const ParticlesContainer = props =>
     params = {{
       particles: {
         number: {
-          value: 80,
+          value: 30,
           density: {
             enable: true,
             value_area: 800
@@ -55,7 +55,7 @@ const ParticlesContainer = props =>
           distance: 150,
           color: '#000000',
           opacity: 0.1763753266952075,
-          width: 3
+          width: 1
         },
         move: {
           enable: true,

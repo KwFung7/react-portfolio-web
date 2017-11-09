@@ -33,6 +33,7 @@ body {
   padding: 0;
   // background-image: url('assets/images/wallpaper.jpg');
   user-select: none;
+  -webkit-user-select: none; 
   overflow-y: hidden;
 }
 hr {
