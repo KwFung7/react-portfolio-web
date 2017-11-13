@@ -274,6 +274,9 @@ hr {
     display: flex;
     justify-content: center;
   }
+  .portfolio-loading {
+    margin: 0 calc(50% - 50px);
+  }
   .slick-slider {
     margin: 0 auto;
   }

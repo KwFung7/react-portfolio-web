@@ -5,6 +5,7 @@ import ChevronLeftContainer from './chevron_left'
 import ChevronRightContainer from './chevron_right'
 import TouchApp from 'material-ui-icons/TouchApp'
 import { Grid, Row, Col } from 'react-bootstrap'
+import Img from 'react-image'
 
 
 class PortfolioProjects extends React.Component {
@@ -84,7 +85,14 @@ class PortfolioProjects extends React.Component {
                           <div className = "portfolio-details-scenes">
                             {
                               scenes.map((scene , index) =>
-                                <img key={`scene-${index + 1}`} className = "portfolio-details-scene" src={`/images/${scene}`} alt={scene} />
+                                <Img 
+                                  key={`scene-${index + 1}`}
+                                  className = "portfolio-details-scene"
+                                  src={`/images/${scene}`}
+                                  alt={scene}
+                                  loader={<Img src='/images/spinner.gif' className = "portfolio-scene-loading" />}
+                                  unloader={<Img src='/images/spinner.gif' className = "portfolio-scene-loading" />} 
+                                />
                               )
                             }
                           </div>
@@ -109,7 +117,14 @@ class PortfolioProjects extends React.Component {
                       }
                       {
                         index !== 0 &&
-                          <img key={`image-${index}`} className = "portfolio-details-image" src={`/images/${code_images[index - 1]}`} alt={code_images[index - 1]} />
+                          <Img
+                            key={`image-${index}`}
+                            className = "portfolio-details-image"
+                            src={`/images/${code_images[index - 1]}`}
+                            alt={code_images[index - 1]} 
+                            loader={<Img src='/images/spinner.gif' className = "portfolio-loading" />}
+                            unloader={<Img src='/images/spinner.gif' className = "portfolio-loading" />}   
+                          />
                       }
                     </Col>
                   )
