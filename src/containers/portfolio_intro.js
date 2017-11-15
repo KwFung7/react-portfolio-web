@@ -132,6 +132,7 @@ class PortfolioIntro extends React.Component {
           label = "Top"
           secondary = {true}
           icon = {<ExpandLess />}
+          disableTouchRipple = {true}
           className = "portfolio-button"
           onClick = {() => { handleScroll() } }
           labelStyle = {{fontFamily: 'harabara', letterSpacing: '3px'}}
