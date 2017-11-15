@@ -163,6 +163,7 @@
     .slick-slide {
       // width: 100%;
       min-height: 355px;
+      object-fit: contain;
     }
     .slick-dots {
       bottom: -35px;
