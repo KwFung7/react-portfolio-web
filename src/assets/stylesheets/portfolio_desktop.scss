@@ -138,11 +138,13 @@
         width: calc((100% - 90px)/4);
         height: 100%;
         margin: 0 15px;
+        border-radius: 10px;
       }
     }
     .portfolio-details-image {
       width: 90%;
       margin: 0 5%;
+      border-radius: 20px;
     }
     .slick-slider {
       display: none;
