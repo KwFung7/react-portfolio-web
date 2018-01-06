@@ -79,10 +79,11 @@ hr {
 }
 // ------------------------ Tab ------------------------ //
 .portfolio-tabs {
-  border-top: 1px solid rgba(0, 0, 0, 0.7);
   box-shadow: 0 7px 10px #888888;
-  > div {
-    background-color: black !important;
+  > div:first-child {
+    background-color: transparent !important;
+    background: #000000;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(67, 67, 67, 1));
   }
   .portfolio-tab {
     > div > div {
@@ -293,6 +294,7 @@ hr {
   position: relative;
   button {
     background-color: black !important;
+    box-shadow: 3px 3px 10px #888888;
   }
 }
 
