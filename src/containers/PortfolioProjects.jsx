@@ -1,8 +1,8 @@
 import React from 'react'
 import Slider from 'react-slick'
 import PropTypes from 'prop-types'
-import ChevronLeftContainer from './chevron_left'
-import ChevronRightContainer from './chevron_right'
+import ChevronLeftComponent from '../components/ChevronLeftComponent'
+import ChevronRightComponent from '../components/ChevronRightComponent'
 import TouchApp from 'material-ui-icons/TouchApp'
 import { Grid, Row, Col } from 'react-bootstrap'
 import Img from 'react-image'
@@ -105,8 +105,8 @@ class PortfolioProjects extends React.Component {
                             speed = {500}
                             slidesToShow = {1}
                             slidesToScroll = {1}
-                            prevArrow = {<ChevronLeftContainer />}
-                            nextArrow = {<ChevronRightContainer />}
+                            prevArrow = {<ChevronLeftComponent />}
+                            nextArrow = {<ChevronRightComponent />}
                           >
                             {
                               scenes.map((scene , index) => 

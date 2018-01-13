@@ -1,7 +1,7 @@
 import React from 'react'
 import { ChevronRight } from 'material-ui-icons'
 
-export default class ChevronRightContainer extends React.Component {
+class ChevronRightComponent extends React.Component {
   
   render() {
     const {className, onClick} = this.props
@@ -14,3 +14,4 @@ export default class ChevronRightContainer extends React.Component {
     )
   }
 }
+export default ChevronRightComponent

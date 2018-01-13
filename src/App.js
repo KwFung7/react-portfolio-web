@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import PortfolioPage from './containers/portfolio_page'
+import PortfolioPage from './containers/PortfolioPage'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { BrowserRouter as Router, Route} from 'react-router-dom'
 import './App.scss'

@@ -1,8 +1,8 @@
 import React from 'react'
-import PortfolioHeader from './portfolio_header'
-import PortfolioNav from './portfolio_nav'
-import store from './portfolio_data'
-import ParticlesContainer from './particles_container'
+import PortfolioHeader from './PortfolioHeader'
+import PortfolioNav from './PortfolioNav'
+import ParticlesContainer from './ParticlesContainer'
+import store from '../store'
 
 const PortfolioPage = props => {
   return (

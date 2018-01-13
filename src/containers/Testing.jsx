@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
-import TestingExtend from './testing_extend'
+import TestingExtend from './TestingExtend'
 
 const Testing = props =>
 <div>

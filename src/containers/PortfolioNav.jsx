@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import {Tabs, Tab } from 'material-ui/Tabs'
 import SwipeableViews from 'react-swipeable-views'
-import PortfolioIntro from './portfolio_intro'
-import PortfolioProjects from './portfolio_projects'
-import PortfolioContact from './portfolio_contact'
+import PortfolioIntro from './PortfolioIntro'
+import PortfolioProjects from './PortfolioProjects'
+import PortfolioContact from './PortfolioContact'
 
 class PortfolioNav extends React.Component {
   constructor(props) {
