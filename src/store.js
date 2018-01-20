@@ -7,7 +7,7 @@ const store = {
     message: ['Welcome to my portfolio ! Current <b>responsive</b> portfolio web created with <b>React app framework</b> and material-ui on my own. Project page currently include my individual product details and part of source code.'],
     general: {
       type: 'General',
-      name: 'Kwan Ling Fung Felix (關凌鋒)',
+      name: 'Kwan Ling Fung Felix 關凌鋒',
       gender: 'Male',
       year: '1995',
       birth: '30/11/1994',
