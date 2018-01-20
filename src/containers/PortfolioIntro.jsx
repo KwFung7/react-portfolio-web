@@ -106,11 +106,11 @@ class PortfolioIntro extends React.Component {
             <div className = "portfolio-education-details">
               {education.details.map((detail, index) =>
                 <div key = {index} className = "portfolio-education-detail">
-                  <div className = "portfolio-education-programme">
-                    {`${detail.period}, ${detail.programme}`}
-                  </div>
                   <div className = "portfolio-education-school">
                     {detail.school}
+                  </div>
+                  <div className = "portfolio-education-programme">
+                    {`${detail.programme}, ${detail.period}`}
                   </div>
                   <br />
                 </div>
