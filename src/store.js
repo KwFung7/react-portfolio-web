@@ -64,10 +64,15 @@ const store = {
     },
     language: {
       type: 'Language',
-      details: [
-        'IELTS English Language Test – Level 6.5',
-        'CRE Chinese & English – Level 2',
-        'Spoken Language:  Native Cantonese, Fluent English'
+      qualifications: [
+        'IELTS English Language Test',
+        'CRE Chinese & English',
+        'Spoken Language'
+      ],
+      results: [
+        'Level 6.5',
+        'Level 2',
+        'Native Cantonese & Fluent English'
       ]
     }
   },

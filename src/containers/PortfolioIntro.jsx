@@ -122,8 +122,11 @@ class PortfolioIntro extends React.Component {
               {language.type}
             </div>
             <div className = "portfolio-language-details">
-              {language.details.map((detail, index) =>
-                <div key = {index} className = "portfolio-language-detail">{detail}</div>
+              {language.qualifications.map((qualification, index) =>
+                <div key = {index} className = "portfolio-language-detail">
+                  <div>{qualification}</div>
+                  <div>{language.results[index]}</div>
+                </div>
               )}
             </div>
           </div>
