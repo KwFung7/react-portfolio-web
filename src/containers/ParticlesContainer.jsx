@@ -54,7 +54,7 @@ const ParticlesContainer = props =>
           enable: true,
           distance: 150,
           color: '#000000',
-          opacity: 0.1763753266952075,
+          opacity: 0.5,
           width: 1
         },
         move: {
