@@ -164,4 +164,14 @@
     margin: 0 50px 30px;
     bottom: 4px;
   }
+  .view-extend-1 {
+    .react-swipeable-view-container {
+      max-height: 2100px !important;
+    }
+  }
+  .view-extend-2 {
+    .react-swipeable-view-container {
+      max-height: 2500px !important;
+    }
+  }
 }
