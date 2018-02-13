@@ -63,8 +63,10 @@ class PortfolioProjects extends React.Component {
           this.state.open !== 0 &&
             <Grid>
               <Row className = "portfolio-projects-details">
-                <Col xsHidden sm={4} md={3} className = {`portfolio-ios-icon ${selected_data.short_name}`} ></Col>
-                <Col xs={12} sm={8} md={9} className = "portfolio-details-info">
+                <Col md={12} lg={3} className = "d-none d-md-block">
+                  <div className = {`portfolio-ios-icon ${selected_data.short_name}`}></div>
+                </Col>
+                <Col xs={12} sm={12} md={12} lg={9} className = "portfolio-details-info">
                   <div className = "portfolio-info-name">
                     Project name: {selected_data.name}
                   </div>
