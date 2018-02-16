@@ -49,6 +49,9 @@ hr {
   height: 0;
   transition: visibility 0s 0.5s, height 0s 0.5s, opacity 0.5s linear;
 }
+.portfolio-api-loading {
+  margin: calc(50vh - 50px) calc(50% - 50px);
+}
 // ------------------------ Header ------------------------ //
 .portfolio-header-container {
   width: 100%;

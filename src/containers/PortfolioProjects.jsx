@@ -32,16 +32,16 @@ class PortfolioProjects extends React.Component {
   }
 
   render() {
-    const { individual } = this.props.projects
+    const { projects = {} } = this.props
     const { selected_data = {} } = this.state
     const { details = [], scenes = [], code_images = [] } = selected_data
     return (
       <div className = "portfolio-projects">
         <div className = "portfolio-projects-individual">
-          <div className = "portfolio-individual-title">{individual.title}</div>
+          <div className = "portfolio-individual-title">{projects.title}</div>
           <div className = "portfolio-projects-ios">
             { 
-              individual.ios_app.map((item, index) =>
+              projects.ios_app.map((item, index) =>
                 <div 
                   key = {index} 
                   className = {`portfolio-ios-icon icon-hover ${item.short_name}`}
