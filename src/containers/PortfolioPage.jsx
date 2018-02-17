@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import _ from 'lodash'
+import { API_HOST_URL } from '../constants'
 import PortfolioHeader from './PortfolioHeader'
 import PortfolioNav from './PortfolioNav'
 import ParticlesContainer from './ParticlesContainer'
@@ -17,7 +18,7 @@ class PortfolioPage extends Component {
   componentDidMount() {
     const config = {
       method: 'GET',
-      url: 'http://localhost:5000/api/v1/portfolio/5a8644518c4b776715afacd1'
+      url: `${API_HOST_URL}/api/v1/portfolio/5a8644518c4b776715afacd1`
     }
     axios(config)
       .then((res) => {

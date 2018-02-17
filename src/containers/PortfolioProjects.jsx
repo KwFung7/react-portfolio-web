@@ -6,7 +6,12 @@ import ChevronRightComponent from '../components/ChevronRightComponent'
 import TouchApp from 'material-ui-icons/TouchApp'
 import { Grid, Row, Col } from 'react-bootstrap'
 import Img from 'react-image'
-
+import { 
+  CLICK_FOR_DETAILS,
+  PROJECT_NAME,
+  PROJECT_TYPE,
+  PROJECT_SITE
+} from '../constants'
 
 class PortfolioProjects extends React.Component {
   constructor(props) {
@@ -55,7 +60,7 @@ class PortfolioProjects extends React.Component {
             this.state.open === 0 &&
               <div className = "portfolio-individual-title">
                 <TouchApp color='rgba(30%, 30%, 30%, 0.9)' />
-                <span> Click for details</span>
+                <span>{CLICK_FOR_DETAILS}</span>
               </div>
           } 
         </div>
@@ -68,13 +73,13 @@ class PortfolioProjects extends React.Component {
                 </Col>
                 <Col xs={12} sm={12} md={12} lg={9} className = "portfolio-details-info">
                   <div className = "portfolio-info-name">
-                    Project name: {selected_data.name}
+                    {PROJECT_NAME} {selected_data.name}
                   </div>
                   <div className = "portfolio-info-type">
-                    Project type: {selected_data.type}
+                    {PROJECT_TYPE} {selected_data.type}
                   </div>
                   <div className = "portfolio-info-site">
-                    <div>Project site: </div>
+                    <div>{PROJECT_SITE} </div>
                     <a href={selected_data.site} target="_blank">{selected_data.site}</a>
                   </div>
                 </Col>

@@ -7,6 +7,14 @@ import { purple500 } from 'material-ui/styles/colors'
 import ExpandLess from 'material-ui-icons/ExpandLess'
 import Stars from 'material-ui-icons/Stars'
 import Typed from 'typed.js'
+import { 
+  NAME,
+  GENDER,
+  AGE,
+  DATE_OF_BIRTH,
+  CURRENT_POSITION,
+  TOP_BUTTON_LABEL
+} from '../constants'
 
 class PortfolioIntro extends React.Component {
 
@@ -43,19 +51,19 @@ class PortfolioIntro extends React.Component {
               {general.type}
             </div>
             <div className = "portfolio-general-name">
-              {`Name: ${general.name}`}
+              {`${NAME} ${general.name}`}
             </div>
             <div className = "portfolio-general-gender">
-              {`Gender: ${general.gender}`}
+              {`${GENDER} ${general.gender}`}
             </div>
             <div className = "portfolio-general-age">
-              {`Age: ${moment().format("YYYY") - general.year}`}
+              {`${AGE} ${moment().format("YYYY") - general.year}`}
             </div>
             <div className = "portfolio-general-birth">
-              {`Date of birth: ${general.birth}`}
+              {`${DATE_OF_BIRTH} ${general.birth}`}
             </div>
             <div className = "portfolio-general-position">
-              {`Current Position: ${general.position}`}
+              {`${CURRENT_POSITION} ${general.position}`}
             </div>
           </div>
           <div className = "portfolio-intro-experience">
@@ -132,7 +140,7 @@ class PortfolioIntro extends React.Component {
           </div>
         </div>
         <RaisedButton
-          label = "Top"
+          label = {TOP_BUTTON_LABEL}
           secondary = {true}
           icon = {<ExpandLess />}
           disableTouchRipple = {true}

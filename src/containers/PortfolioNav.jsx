@@ -6,6 +6,7 @@ import SwipeableViews from 'react-swipeable-views'
 import PortfolioIntro from './PortfolioIntro'
 import PortfolioProjects from './PortfolioProjects'
 import PortfolioContact from './PortfolioContact'
+import { INTRO, PROJECTS, CONTACT } from '../constants'
 
 class PortfolioNav extends React.Component {
   constructor(props) {
@@ -46,9 +47,9 @@ class PortfolioNav extends React.Component {
           onChange = {this.handleChange}
           value = {this.state.slideIndex}
         >
-          <Tab className = "portfolio-tab" label = "Intro" value = {0} />
-          <Tab className = "portfolio-tab" label = "Projects" value = {1} />
-          <Tab className = "portfolio-tab" label = "Contact" value = {2} />
+          <Tab className = "portfolio-tab" label = {INTRO} value = {0} />
+          <Tab className = "portfolio-tab" label = {PROJECTS} value = {1} />
+          <Tab className = "portfolio-tab" label = {CONTACT} value = {2} />
         </Tabs>
         <SwipeableViews
           className = {`portfolio-swipeable-view ${extend_projects_detail !== 0 && slideIndex === 1 ? `view-extend-${extend_projects_detail}` : `view-${slideIndex + 1}` }`}
