@@ -25,3 +25,8 @@ export const CLICK_FOR_DETAILS = ' Click for details'
 export const PROJECT_NAME = 'Project name:'
 export const PROJECT_TYPE = 'Project type:'
 export const PROJECT_SITE = 'Project site:'
+
+// NoMatch
+export const NO_MATCH_STATUS = '404.'
+export const NOT_FOUND = 'Not Found'
+export const NO_MATCH_FOR = 'No match for '

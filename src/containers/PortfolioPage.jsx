@@ -16,9 +16,10 @@ class PortfolioPage extends Component {
   }
 
   componentDidMount() {
+    const params = this.props.match.params
     const config = {
       method: 'GET',
-      url: `${API_HOST_URL}/api/v1/portfolio/5a8644518c4b776715afacd1`
+      url: `${API_HOST_URL}/api/v1/portfolio/${params.id}`
     }
     axios(config)
       .then((res) => {
@@ -34,7 +35,7 @@ class PortfolioPage extends Component {
     const { portfolio = {} } = this.state
     return (
       _.isEmpty(portfolio)
-        ? <Img src='/images/spinner.gif' className = "portfolio-api-loading" />
+        ? <Img src='/images/spinner.gif' className = "api-loading" />
         : <div className = "portfolio-page">
             <ParticlesContainer />
             <PortfolioHeader user = {portfolio.header} />
