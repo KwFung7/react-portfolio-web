@@ -14,17 +14,21 @@ export const CURRENT_POSITION = 'Current Position:'
 export const TOP_BUTTON_LABEL = 'Top'
 export const EMAIL = 'Email:'
 export const TELEPHONE = 'Tel:'
+export const CLICK_FOR_DETAILS = ' Click for details'
+export const PROJECT_NAME = 'Project name:'
+export const PROJECT_TYPE = 'Project type:'
+export const PROJECT_SITE = 'Project site:'
 
 // Navigation
 export const INTRO = 'Intro'
 export const PROJECTS = 'Projects'
 export const CONTACT = 'Contact'
 
-// Projects
-export const CLICK_FOR_DETAILS = ' Click for details'
-export const PROJECT_NAME = 'Project name:'
-export const PROJECT_TYPE = 'Project type:'
-export const PROJECT_SITE = 'Project site:'
+// Footer
+export const COPYRIGHT = '© 2017 Felix Kwan. All rights reserved.'
+
+// Timer
+export const TIMER_INTERVAL = 1000
 
 // NoMatch
 export const NO_MATCH_STATUS = '404.'

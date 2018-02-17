@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Face from 'material-ui-icons/Face'
 import moment from 'moment'
+import { TIMER_INTERVAL } from '../constants'
 
 class PortfolioHeader extends React.Component {
   constructor(props) {
@@ -29,7 +30,7 @@ class PortfolioHeader extends React.Component {
         current_date: moment().format('LL'), 
         current_time: moment().format('LTS') 
       })
-    }, 1000)
+    }, TIMER_INTERVAL)
   }
   componentWillUnmount() {
     clearInterval(this._timer)
