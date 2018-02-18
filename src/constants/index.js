@@ -3,7 +3,9 @@ export const ROOT = '/'
 export const PORTFOLIO_ROUTE = '/portfolio'
 
 // API
-export const API_HOST_URL = 'http://localhost:5000'
+export const API_HOST_URL = process.env.NODE_ENV === 'development'
+  ? 'http://localhost:5000'
+  : 'https://admin.kwfxng.com'
 
 // Page
 export const NAME = 'Name:'
