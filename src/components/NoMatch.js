@@ -2,7 +2,7 @@ import React from 'react'
 import { NO_MATCH_STATUS, NOT_FOUND, NO_MATCH_FOR } from '../constants'
 
 const textStyle = {
-  color: 'lightgrey',
+  color: 'grey',
   textAlign: 'center'
 }
 const NoMatch = ({ location }) =>
