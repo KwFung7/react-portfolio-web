@@ -62,7 +62,7 @@ hr {
   overflow-y: 'hidden';
   .portfolio-header-face {
     position: absolute;
-    top: 18px;
+    top: 25px;
     left: 20px;
   }
   .portfolio-header-name {
@@ -312,6 +312,10 @@ hr {
   color: rgba(30%, 30%, 30%, 1);
   text-align: center;
   letter-spacing: 3px;
+  a {
+    cursor: pointer;
+    color: grey;
+  }
 }
 // ------------------------ Button ------------------------ //
 .portfolio-button {
