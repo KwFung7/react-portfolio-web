@@ -91,14 +91,14 @@ class PortfolioProjects extends React.Component {
                         index === 0 &&
                           <div className = "portfolio-details-scenes">
                             {
-                              scenes.map((scene , index) =>
+                              scenes.map((scene, index) =>
                                 <Img 
                                   key={`scene-${index + 1}`}
                                   className = "portfolio-details-scene"
-                                  src={`/images/${scene}`}
-                                  alt={scene}
-                                  loader={<Img src='/images/spinner.gif' className = "portfolio-scene-loading" />}
-                                  unloader={<Img src='/images/spinner.gif' className = "portfolio-scene-loading" />} 
+                                  src={scene}
+                                  alt={`scene-${index + 1}`}
+                                  loader={<Img src='/images/spinner.gif' alt='spinner' className = "portfolio-scene-loading" />}
+                                  unloader={<Img src='/images/spinner.gif' alt='spinner' className = "portfolio-scene-loading" />} 
                                 />
                               )
                             }
@@ -117,7 +117,7 @@ class PortfolioProjects extends React.Component {
                           >
                             {
                               scenes.map((scene , index) => 
-                                <img key={`scene-${index + 1}`} src={`/images/${scene}`} alt={scene} />
+                                <img key={`scene-${index + 1}`} src={scene} alt={`scene-${index + 1}`} />
                               )
                             } 
                           </Slider>
@@ -127,10 +127,10 @@ class PortfolioProjects extends React.Component {
                           <Img
                             key={`image-${index}`}
                             className = "portfolio-details-image"
-                            src={`/images/${code_images[index - 1]}`}
-                            alt={code_images[index - 1]} 
-                            loader={<Img src='/images/spinner.gif' className = "portfolio-loading" />}
-                            unloader={<Img src='/images/spinner.gif' className = "portfolio-loading" />}   
+                            src={code_images[index - 1]}
+                            alt={`image-${index}`}
+                            loader={<Img src='/images/spinner.gif' alt='spinner' className = "portfolio-loading" />}
+                            unloader={<Img src='/images/spinner.gif' alt='spinner' className = "portfolio-loading" />}   
                           />
                       }
                     </Col>
