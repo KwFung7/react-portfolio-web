@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import _ from 'lodash'
-import { API_HOST_URL } from '../constants'
+import { API_HOST_URL, PORTFOLIO_TITLE } from '../constants'
 import PortfolioHeader from './PortfolioHeader'
 import PortfolioNav from './PortfolioNav'
 import ParticlesContainer from './ParticlesContainer'
@@ -37,6 +37,8 @@ class PortfolioPage extends Component {
       _.isEmpty(portfolio)
         ? <Img src='/images/spinner.gif' className = "api-loading" />
         : <div className = "portfolio-page">
+            <h1 className="hidden">{PORTFOLIO_TITLE}</h1>
+            <h2 className="hidden">{PORTFOLIO_TITLE}</h2>
             <ParticlesContainer />
             <PortfolioHeader user = {portfolio.header} />
             <PortfolioNav 

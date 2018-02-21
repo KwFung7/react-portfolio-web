@@ -8,6 +8,7 @@ export const API_HOST_URL = process.env.NODE_ENV === 'development'
   : 'https://admin.kwfxng.com'
 
 // Page
+export const PORTFOLIO_TITLE = 'Portfolio web by Felix Kwan'
 export const NAME = 'Name:'
 export const GENDER = 'Gender:'
 export const AGE = 'Age:'
