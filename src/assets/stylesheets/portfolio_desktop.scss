@@ -1,7 +1,7 @@
 // ------------------------ Desktop ------------------------ //
 @media only screen and (min-width: 992px) {
   .portfolio-header-container {
-    padding: 10px 0 25px;
+    padding-top: 5px;
 
     .material-icons {
       position: absolute;
@@ -14,8 +14,8 @@
     }
     .portfolio-header-pos {
       font-size: 17px;
-      top: 25px;
-      left: -80px;
+      top: 0;
+      left: 15px;
     }
     .portfolio-header-date {
       font-size: 15px;

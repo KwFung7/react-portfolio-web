@@ -63,6 +63,7 @@ hr {
   background-color: black;
   font-family: 'harabara';
   overflow-y: 'hidden';
+  opacity: 0.8;
   .portfolio-header-face {
     position: absolute;
     top: 25px;
@@ -91,6 +92,7 @@ hr {
 // ------------------------ Tab ------------------------ //
 .portfolio-tabs {
   box-shadow: 0 7px 10px #888888;
+  opacity: 0.8;
   > div:first-child {
     background-color: transparent !important;
     background: #000000;

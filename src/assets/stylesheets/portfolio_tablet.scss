@@ -1,7 +1,7 @@
 // ------------------------ Tablet ------------------------ //
 @media only screen and (min-width: 768px) and (max-width: 991px){
   .portfolio-header-container {
-    padding: 10px 0 25px;
+    padding-top: 5px;
 
     .material-icons {
       position: absolute;
@@ -14,18 +14,18 @@
     }
     .portfolio-header-pos {
       font-size: 15px;
-      top: 25px;
-      left: -80px;
+      top: 0;
+      left: 15px;
     }
     .portfolio-header-date {
       font-size: 15px;
       right: 30px;
-      top: 15px;
+      top: 10px;
     }
     .portfolio-header-time {
       font-size: 15px;
       right: 30px;
-      top: 35px;
+      top: 30px;
     }
   }
   .portfolio-tab {
