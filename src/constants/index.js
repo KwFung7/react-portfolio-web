@@ -28,7 +28,7 @@ export const PROJECTS = 'Projects'
 export const CONTACT = 'Contact'
 
 // Footer
-export const COPYRIGHT = '© 2017 Felix Kwan. All rights reserved.'
+export let COPYRIGHT = '© [currentYear] Felix Kwan. All rights reserved.'
 
 // Timer
 export const TIMER_INTERVAL = 1000

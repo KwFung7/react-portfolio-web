@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import _ from 'lodash'
-import { API_HOST_URL, PORTFOLIO_TITLE } from '../constants'
+import moment from 'moment'
+import { API_HOST_URL, PORTFOLIO_TITLE, COPYRIGHT } from '../constants'
 import PortfolioHeader from './PortfolioHeader'
 import PortfolioNav from './PortfolioNav'
 import ParticlesContainer from './ParticlesContainer'
@@ -33,6 +34,8 @@ class PortfolioPage extends Component {
 
   render () {
     const { portfolio = {} } = this.state
+    let copyright = COPYRIGHT.replace('[currentYear]', moment().year())
+
     return (
       _.isEmpty(portfolio)
         ? <Img src='/images/spinner.gif' className = "api-loading" />
@@ -46,6 +49,7 @@ class PortfolioPage extends Component {
               projects = {portfolio.projects}
               contact = {portfolio.contact}
             />
+            <div className = {`portfolio-copyright container-fluid`} >{copyright}</div>
           </div>
     )
   }
