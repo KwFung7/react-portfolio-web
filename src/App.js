@@ -11,7 +11,7 @@ import './App.scss'
 
 class App extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       setting: {}
     }
@@ -21,10 +21,10 @@ class App extends Component {
     const config = {
       method: 'GET',
       url: `${API_HOST_URL}/api/v1/setting`
-    }
+    };
     axios(config)
       .then((res) => {
-        const { data = [] } = res
+        const { data = [] } = res;
         this.setState({ setting: _.head(data) })
       })
       .catch((err) => {
@@ -33,12 +33,12 @@ class App extends Component {
   }
 
   redirectToPortfolio = () => {
-    const { setting = {} } = this.state
-    const { selected_portfolio } = setting
+    const { setting = {} } = this.state;
+    const { selected_portfolio } = setting;
     return <Redirect to={`${PORTFOLIO_ROUTE}/${selected_portfolio}`} />
-  }
+  };
   render() {
-    const { setting = {} } = this.state
+    const { setting = {} } = this.state;
     return (
       _.isEmpty(setting)
       ? <Img src='/images/spinner.gif' className = "api-loading" />

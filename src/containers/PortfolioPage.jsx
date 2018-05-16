@@ -10,21 +10,21 @@ import Img from 'react-image'
 
 class PortfolioPage extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       portfolio: {}
     }
   }
 
   componentDidMount() {
-    const params = this.props.match.params
+    const params = this.props.match.params;
     const config = {
       method: 'GET',
       url: `${API_HOST_URL}/api/v1/portfolio/${params.id}`
-    }
+    };
     axios(config)
       .then((res) => {
-        const { data = {} } = res
+        const { data = {} } = res;
         this.setState({ portfolio: data })
       })
       .catch((err) => {
@@ -33,8 +33,8 @@ class PortfolioPage extends Component {
   }
 
   render () {
-    const { portfolio = {} } = this.state
-    let copyright = COPYRIGHT.replace('[currentYear]', moment().year())
+    const { portfolio = {} } = this.state;
+    let copyright = COPYRIGHT.replace('[currentYear]', moment().year());
 
     return (
       _.isEmpty(portfolio)

@@ -19,14 +19,14 @@ import {
 class PortfolioIntro extends React.Component {
 
   componentDidMount() {
-    const { message } = this.props.intro
+    const { message } = this.props.intro;
     const options = {
       strings: message,
       contentType: 'html',
       typeSpeed: 30,
       startDelay: 1500,
       shuffle: true
-    }
+    };
     // this.el refers to the <span> in the render() method
     this.typed = new Typed(this.el, options)
   }
@@ -37,16 +37,16 @@ class PortfolioIntro extends React.Component {
     this.typed.destroy()
   }
   render() {
-    let { intro = {}, handleScroll = () => {} } = this.props
-    let { general, experience, skill, education, language } = intro
+    let { intro = {}, handleScroll = () => {} } = this.props;
+    let { general, experience, skill, education, language } = intro;
 
     // Calculate age
-    let birth_data = general.birth.split('/')
-    let month = parseInt(birth_data[1], 10)
-    let year = parseInt(birth_data[2], 10)
+    let birth_data = general.birth.split('/');
+    let month = parseInt(birth_data[1], 10);
+    let year = parseInt(birth_data[2], 10);
     let age = month >= parseInt(moment().format("MM"), 10)
       ? moment().format("YYYY") - year - 1
-      : moment().format("YYYY") - year
+      : moment().format("YYYY") - year;
     return (
       <div className = "portfolio-intro">
         <div className = "portfolio-web-message">
@@ -163,9 +163,9 @@ class PortfolioIntro extends React.Component {
 PortfolioIntro.defaultProps = {
   intro: {},
   handleScroll: () => {}
-}
+};
 PortfolioIntro.propTypes = {
   intro: PropTypes.object.isRequired,
   handleScroll: PropTypes.func.isRequired
-}
+};
 export default PortfolioIntro

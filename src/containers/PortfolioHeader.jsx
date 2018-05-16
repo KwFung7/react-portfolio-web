@@ -6,14 +6,14 @@ import { TIMER_INTERVAL } from '../constants'
 
 class PortfolioHeader extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       current_date: moment().format('LL'),
       current_time: moment().format('LTS')
     }
   }
   render() {
-    let { name, position } = this.props.user
+    let { name, position } = this.props.user;
     return (
       <div className = "portfolio-header-container">
         <Face className = "portfolio-header-face" color = "white" />
@@ -38,8 +38,8 @@ class PortfolioHeader extends React.Component {
 }
 PortfolioHeader.defaultProps = {
   user: {}
-}
+};
 PortfolioHeader.propTypes = {
   user: PropTypes.object.isRequired
-}
+};
 export default PortfolioHeader

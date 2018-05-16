@@ -15,7 +15,7 @@ import {
 
 class PortfolioProjects extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       open: 0,
       selected_data: {}
@@ -26,20 +26,20 @@ class PortfolioProjects extends React.Component {
     this.setState({ 
       open: item.id,
       selected_data: item
-    })
+    });
     this.props.handleExtend(item.id)
-  }
+  };
   handleClose = () => {
     this.setState({ 
       open: 0,
       selected_data: {}
     })
-  }
+  };
 
   render() {
-    const { projects = {} } = this.props
-    const { selected_data = {} } = this.state
-    const { details = [], scenes = [], code_images = [] } = selected_data
+    const { projects = {} } = this.props;
+    const { selected_data = {} } = this.state;
+    const { details = [], scenes = [], code_images = [] } = selected_data;
     return (
       <div className = "portfolio-projects">
         <div className = "portfolio-projects-individual">
@@ -146,9 +146,9 @@ class PortfolioProjects extends React.Component {
 PortfolioProjects.defaultProps = {
   projects: {},
   handleExtend: () => {}
-}
+};
 PortfolioProjects.propTypes = {
   projects: PropTypes.object.isRequired,
   handleExtend: PropTypes.func.isRequired
-}
+};
 export default PortfolioProjects

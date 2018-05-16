@@ -6,8 +6,8 @@ import { EMAIL, TELEPHONE } from '../constants'
 class PortfolioContact extends React.Component {
 
   render() {
-    const { contact = {} } = this.props
-    const { email = '', phone = '', github_link, linkedin_link } = contact
+    const { contact = {} } = this.props;
+    const { email = '', phone = '', github_link, linkedin_link } = contact;
     return (
       <div className = "portfolio-contact">
         <div className = "portfolio-contact-email">{EMAIL} {email}</div>
@@ -32,8 +32,8 @@ class PortfolioContact extends React.Component {
 }
 PortfolioContact.defaultProps = {
   contact: {}
-}
+};
 PortfolioContact.propTypes = {
   contact: PropTypes.object.isRequired
-}
+};
 export default PortfolioContact

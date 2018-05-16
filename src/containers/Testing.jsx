@@ -7,9 +7,9 @@ const Testing = props =>
 <div>
     <h1>Testing for react</h1>
     <TestingExtend />
-</div>
+</div>;
 
 ReactDOM.render(
     <Testing />,
     document.body.appendChild(document.createElement('div'))
-)
+);

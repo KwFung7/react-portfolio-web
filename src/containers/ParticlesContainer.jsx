@@ -119,6 +119,6 @@ const ParticlesContainer = props =>
       height: '100%',
       zIndex: -1
     }}
-  />
+  />;
 
 export default ParticlesContainer

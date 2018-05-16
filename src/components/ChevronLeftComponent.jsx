@@ -4,7 +4,7 @@ import { ChevronLeft } from 'material-ui-icons'
 class ChevronLeftComponent extends React.Component {
 
   render() {
-    const {className, onClick} = this.props
+    const {className, onClick} = this.props;
     return(
       <ChevronLeft
         className={className}

@@ -4,6 +4,6 @@ import { COPYRIGHT } from '../constants'
 const PortfolioFooter = (props) =>
 <div className="container-fluid text-center">
   {COPYRIGHT}
-</div>
+</div>;
 
 export default PortfolioFooter

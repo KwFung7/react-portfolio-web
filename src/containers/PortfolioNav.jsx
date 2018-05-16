@@ -10,7 +10,7 @@ import { INTRO, PROJECTS, CONTACT } from '../constants'
 
 class PortfolioNav extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       slideIndex: 0,
       extend_projects_detail: 0
@@ -18,16 +18,16 @@ class PortfolioNav extends React.Component {
   }
 
   handleChange = (value) => {
-    let viewNode = ReactDOM.findDOMNode(this.refs.view)
-    viewNode.scrollTop = 0
+    let viewNode = ReactDOM.findDOMNode(this.refs.view);
+    viewNode.scrollTop = 0;
     
     this.setState({ slideIndex: value })
-  }
+  };
   handleExtend = (project_id) => {
     this.setState({ extend_projects_detail: project_id })
-  }
+  };
   handleScroll = (event) => {
-    let viewNode = ReactDOM.findDOMNode(this.refs.view)
+    let viewNode = ReactDOM.findDOMNode(this.refs.view);
     let scroll = window.setInterval(() => { 
       if (viewNode.scrollTop > 0) {
         viewNode.scrollTop = viewNode.scrollTop - 50
@@ -35,11 +35,11 @@ class PortfolioNav extends React.Component {
         window.clearInterval(scroll)
       }
     }, 10)
-  }
+  };
 
   render() {
-    let { intro, projects, contact } = this.props
-    let { slideIndex = 0, extend_projects_detail = false } = this.state
+    let { intro, projects, contact } = this.props;
+    let { slideIndex = 0, extend_projects_detail = false } = this.state;
     return (
       <div>
         <Tabs
@@ -71,10 +71,10 @@ PortfolioNav.defaultProps = {
   intro: {},
   projects: {},
   contact: {}
-}
+};
 PortfolioNav.propTypes = {
   intro: PropTypes.object.isRequired,
   projects: PropTypes.object.isRequired,
   contact: PropTypes.object.isRequired
-}
+};
 export default PortfolioNav
