@@ -27,7 +27,7 @@ class PortfolioPage extends Component {
         const { data = {} } = res;
         this.setState({ portfolio: data })
       })
-      .catch((err) => {
+      .catch(() => {
         console.log('Fail to load portfolio.')
       })
   }

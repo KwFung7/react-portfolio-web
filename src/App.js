@@ -27,7 +27,7 @@ class App extends Component {
         const { data = [] } = res;
         this.setState({ setting: _.head(data) })
       })
-      .catch((err) => {
+      .catch(() => {
         console.log('Fail to load system settings.')
       })
   }

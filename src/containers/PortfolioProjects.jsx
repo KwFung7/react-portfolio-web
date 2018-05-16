@@ -29,12 +29,6 @@ class PortfolioProjects extends React.Component {
     });
     this.props.handleExtend(item.id)
   };
-  handleClose = () => {
-    this.setState({ 
-      open: 0,
-      selected_data: {}
-    })
-  };
 
   render() {
     const { projects = {} } = this.props;

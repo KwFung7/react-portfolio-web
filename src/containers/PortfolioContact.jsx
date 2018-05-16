@@ -15,13 +15,13 @@ class PortfolioContact extends React.Component {
         <div className = "portfolio-contact-social-btn">
           {
             !_.isEmpty(github_link) &&
-            <a className="m-2" href={github_link} alt="github-btn" target="_blank">
+            <a className="m-2" href={github_link} target="_blank">
               <i className="fab fa-github"></i>
             </a>
           }
           {
             !_.isEmpty(linkedin_link) &&
-            <a className="m-2" href={linkedin_link} alt="linkedin-btn" target="_blank">
+            <a className="m-2" href={linkedin_link} target="_blank">
               <i className="fab fa-linkedin"></i>
             </a>
           }
