@@ -146,6 +146,12 @@ hr {
     height: auto !important;
   }
 }
+.view-extend-3 {
+  overflow-y: auto;
+  .react-swipeable-view-container {
+    height: auto !important;
+  }
+}
 // ------------------------ Message ------------------------ //
 .portfolio-web-message {
   background-color: #f5f5f55e;
@@ -278,6 +284,9 @@ hr {
 }
 .sanguosha-data {
   background-image: url('assets/images/sanguosha-icon.png');
+}
+.trading-bot {
+  background-image: url('assets/images/tradingbot-icon.png');
 }
 .portfolio-projects-details {
   font-family: 'Permanent Marker', 'harabara';
