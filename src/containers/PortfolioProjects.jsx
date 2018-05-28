@@ -1,17 +1,18 @@
-import React from 'react'
-import Slider from 'react-slick'
-import PropTypes from 'prop-types'
-import ChevronLeftComponent from '../components/ChevronLeftComponent'
-import ChevronRightComponent from '../components/ChevronRightComponent'
-import TouchApp from 'material-ui-icons/TouchApp'
-import { Grid, Row, Col } from 'react-bootstrap'
-import Img from 'react-image'
+import React from 'react';
+import Slider from 'react-slick';
+import PropTypes from 'prop-types';
+import ChevronLeftComponent from '../components/ChevronLeftComponent';
+import ChevronRightComponent from '../components/ChevronRightComponent';
+import TouchApp from 'material-ui-icons/TouchApp';
+import { Grid, Row, Col } from 'react-bootstrap';
+import Img from 'react-image';
+import _ from 'lodash';
 import { 
   CLICK_FOR_DETAILS,
   PROJECT_NAME,
   PROJECT_TYPE,
   PROJECT_SITE
-} from '../constants'
+} from '../constants';
 
 class PortfolioProjects extends React.Component {
   constructor(props) {
@@ -33,7 +34,11 @@ class PortfolioProjects extends React.Component {
   render() {
     const { projects = {} } = this.props;
     const { selected_data = {} } = this.state;
-    const { details = [], scenes = [], code_images = [] } = selected_data;
+    let { details = [], scenes = [], code_images = [] } = selected_data;
+    scenes = scenes.filter((scene) => {
+      return !_.isEmpty(scene);
+    });
+
     return (
       <div className = "portfolio-projects">
         <div className = "portfolio-projects-individual">
