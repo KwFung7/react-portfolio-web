@@ -84,6 +84,7 @@ class PortfolioProjects extends React.Component {
                 </Col>
                 {
                   details.map((detail, index) =>
+                    detail !== " " && // this mean skip scenes part
                     <Col key={index} xs={12} sm={12} className = "portfolio-details-box">
                       <div className = "portfolio-details-caption">{detail}</div>
                       {
