@@ -82,7 +82,7 @@ class PortfolioProjects extends React.Component {
                     <Col key={index} xs={12} sm={12} className = "portfolio-details-box">
                       <div className = "portfolio-details-caption">{detail}</div>
                       {
-                        index === 0 &&
+                        index === 0 && scenes.length > 0 &&
                           <div className = "portfolio-details-scenes">
                             {
                               scenes.map((scene, index) =>
@@ -99,7 +99,7 @@ class PortfolioProjects extends React.Component {
                           </div>
                       }
                       {
-                        index === 0 &&
+                        index === 0 && scenes.length > 0 &&
                           <Slider
                             dots = {true}
                             infinite = {true}
