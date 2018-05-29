@@ -77,10 +77,13 @@ class PortfolioProjects extends React.Component {
                   <div className = "portfolio-info-type">
                     {PROJECT_TYPE} {selected_data.type}
                   </div>
-                  <div className = "portfolio-info-site">
-                    <div>{PROJECT_SITE} </div>
-                    <a href={selected_data.site} target="_blank">{selected_data.site}</a>
-                  </div>
+                  {
+                    selected_data.site.length > 0 &&
+                    <div className = "portfolio-info-site">
+                        <div>{PROJECT_SITE} </div>
+                        <a href={selected_data.site} target="_blank">{selected_data.site}</a>
+                    </div>
+                  }
                 </Col>
                 {
                   details.map((detail, index) =>
