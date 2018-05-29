@@ -121,15 +121,15 @@
     }
   }
   .portfolio-ios-icon {
-    border-radius: 35px;
+    border-radius: 15px;
     margin: 0 15px 20px;
-    height: 120px;
-    width: 120px;
+    height: 70px;
+    width: 70px;
   }
   .icon-hover:hover {
     margin: 0 12px 14px;
-    height: 126px;
-    width: 126px;
+    height: 76px;
+    width: 76px;
   }
   .portfolio-projects-details {
     border-radius: 30px;
@@ -189,7 +189,7 @@
   }
   .view-extend-3 {
     .react-swipeable-view-container {
-      max-height: 1600px !important;
+      max-height: 1250px !important;
     }
   }
 }
