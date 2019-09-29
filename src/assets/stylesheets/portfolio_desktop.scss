@@ -2,6 +2,7 @@
 @media only screen and (min-width: 992px) {
   .portfolio-header-container {
     padding-top: 15px;
+    padding-bottom: 15px;
 
     .material-icons {
       position: absolute;
@@ -10,7 +11,7 @@
     }
     .portfolio-header-name {
       font-size: 40px;
-      margin-left: 60px;
+      margin-left: 40px;
     }
     .portfolio-header-pos {
       font-size: 17px;
@@ -18,13 +19,13 @@
       left: 15px;
     }
     .portfolio-header-date {
-      font-size: 15px;
-      right: 200px;
+      font-size: 12px;
+      right: 160px;
       top: 10px;
     }
     .portfolio-header-time {
-      font-size: 15px;
-      right: 50px;
+      font-size: 12px;
+      right: 40px;
       top: 10px;
     }
   }

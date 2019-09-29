@@ -62,20 +62,15 @@ hr {
   width: 100%;
   background-color: black;
   font-family: 'harabara';
-  overflow-y: 'hidden';
+  overflow-y: hidden;
   opacity: 0.8;
-  .portfolio-header-face {
-    position: absolute;
-    top: 25px;
-    left: 20px;
-  }
   .portfolio-header-name {
     color: white;
     letter-spacing: 6px;
     display: inline;
   }
   .portfolio-header-pos {
-    font-family: 'queen_of_camelot';
+    font-family: 'harabara';
     color: white;
     letter-spacing: 3px;
     position: relative;
@@ -91,22 +86,21 @@ hr {
 }
 // ------------------------ Tab ------------------------ //
 .portfolio-tabs {
-  box-shadow: 0 7px 10px #888888;
   opacity: 0.8;
+  max-width: 320px;
   > div:first-child {
     background-color: transparent !important;
-    background: #000000;
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(67, 67, 67, 1));
   }
   .portfolio-tab {
     > div > div {
-      font-family: 'queen_of_camelot';
-      // font-family: 'harabara';
+      //font-family: 'queen_of_camelot';
+      font-family: 'harabara';
       text-transform: none;
       letter-spacing: 4px;
-      &:hover {
+      color: black;
+      &:hover, &:active {
         font-weight: bold;
-        font-size: 120%;
+        font-size: 115%;
       }
     }
   }
@@ -163,11 +157,11 @@ hr {
   -o-animation: fadein 3s; /* Opera < 12.1 */
   animation: fadein 3s;
 
-  .material-icons {
+  .portfolio-face {
     margin: 5px;
   }
   .portfolio-message-body {
-    font-family: 'Permanent Marker', 'harabara';
+    font-family: 'harabara';
     color: rgba(50.2%, 0, 50.2%, 0.6);
     letter-spacing: 3px;
     position: relative;

@@ -5,7 +5,7 @@ import _ from 'lodash'
 import { RaisedButton } from 'material-ui'
 import { purple500 } from 'material-ui/styles/colors'
 import ExpandLess from 'material-ui-icons/ExpandLess'
-import Stars from 'material-ui-icons/Stars'
+import Face from 'material-ui-icons/Face'
 import Typed from 'typed.js'
 import { 
   NAME,
@@ -50,7 +50,7 @@ class PortfolioIntro extends React.Component {
     return (
       <div className = "portfolio-intro">
         <div className = "portfolio-web-message">
-          <Stars className = "material-icons" color = {purple500} />
+          <Face className = "portfolio-face" color = {purple500} />
           <div className = "portfolio-message-body" ><span ref={(el) => { this.el = el }}/></div>
         </div>
         <div className = "portfolio-intro-container">
