@@ -374,19 +374,19 @@ hr {
 .gradient-layer:before {
   top: 0;
   height: 50px;
-  background: -webkit-linear-gradient(bottom,hsla(0,0%,100%,0), lightgrey);
-  background: -webkit-gradient(linear,left bottom,left top,from(hsla(0,0%,100%,0)),to(lightgrey));
-  background: -o-linear-gradient(bottom,hsla(0,0%,100%,0) 0,lightgrey 100%);
-  background: linear-gradient(0deg,hsla(0,0%,100%,0) 0,lightgrey);
+  background: -webkit-linear-gradient(bottom,hsla(0,0%,83%,0), lightgrey);
+  background: -webkit-gradient(linear,left bottom,left top,from(hsla(0,0%,83%,0)),to(lightgrey));
+  background: -o-linear-gradient(bottom,hsla(0,0%,83%,0) 0,lightgrey 100%);
+  background: linear-gradient(0deg,hsla(0,0%,83%,0) 0,lightgrey);
 }
 
 .gradient-layer:after {
   bottom: 0;
   height: 50px;
-  background: -webkit-linear-gradient(top,hsla(0,0%,100%,0),lightgrey);
-  background: -webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,0)),to(lightgrey));
-  background: -o-linear-gradient(top,hsla(0,0%,100%,0) 0,lightgrey 100%);
-  background: linear-gradient(180deg,hsla(0,0%,100%,0) 0,lightgrey);
+  background: -webkit-linear-gradient(top,hsla(0,0%,83%,0),lightgrey);
+  background: -webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,83%,0)),to(lightgrey));
+  background: -o-linear-gradient(top,hsla(0,0%,83%,0) 0,lightgrey 100%);
+  background: linear-gradient(180deg,hsla(0,0%,83%,0) 0,lightgrey);
 }
 
 
