@@ -4,7 +4,6 @@ import NoMatch from './components/NoMatch'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom'
 import { ROOT, PORTFOLIO_ROUTE, API_HOST_URL } from './constants'
-import Img from 'react-image'
 import axios from 'axios'
 import _ from 'lodash'
 import './App.scss'
@@ -41,7 +40,7 @@ class App extends Component {
     const { setting = {} } = this.state;
     return (
       _.isEmpty(setting)
-      ? <Img src='/images/spinner.gif' className = "api-loading" />
+      ? <img src='/images/spinner.gif' className="api-loading" alt="loading"/>
       : <MuiThemeProvider>
           <Router>
             <Switch>

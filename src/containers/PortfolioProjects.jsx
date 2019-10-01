@@ -5,7 +5,6 @@ import ChevronLeftComponent from '../components/ChevronLeftComponent';
 import ChevronRightComponent from '../components/ChevronRightComponent';
 import TouchApp from 'material-ui-icons/TouchApp';
 import { Grid, Row, Col } from 'react-bootstrap';
-import Img from 'react-image';
 import _ from 'lodash';
 import { 
   CLICK_FOR_DETAILS,
@@ -95,13 +94,11 @@ class PortfolioProjects extends React.Component {
                           <div className = "portfolio-details-scenes">
                             {
                               scenes.map((scene, index) =>
-                                <Img 
+                                <img
                                   key={`scene-${index + 1}`}
                                   className = "portfolio-details-scene"
                                   src={scene}
                                   alt={`scene-${index + 1}`}
-                                  loader={<Img src='/images/spinner.gif' alt='spinner' className = "portfolio-scene-loading" />}
-                                  unloader={<Img src='/images/spinner.gif' alt='spinner' className = "portfolio-scene-loading" />} 
                                 />
                               )
                             }
@@ -127,13 +124,11 @@ class PortfolioProjects extends React.Component {
                       }
                       {
                         index !== 0 &&
-                          <Img
+                          <img
                             key={`image-${index}`}
                             className = "portfolio-details-image"
                             src={code_images[index - 1]}
-                            alt={`image-${index}`}
-                            loader={<Img src='/images/spinner.gif' alt='spinner' className = "portfolio-loading" />}
-                            unloader={<Img src='/images/spinner.gif' alt='spinner' className = "portfolio-loading" />}   
+                            alt={`detail-${index}`}
                           />
                       }
                     </Col>

@@ -6,7 +6,6 @@ import { API_HOST_URL, PORTFOLIO_TITLE, COPYRIGHT } from '../constants'
 import PortfolioHeader from './PortfolioHeader'
 import PortfolioNav from './PortfolioNav'
 import ParticlesContainer from './ParticlesContainer'
-import Img from 'react-image'
 
 class PortfolioPage extends Component {
   constructor(props) {
@@ -38,7 +37,7 @@ class PortfolioPage extends Component {
 
     return (
       _.isEmpty(portfolio)
-        ? <Img src='/images/spinner.gif' className = "api-loading" />
+        ? <img src='/images/spinner.gif' className = "api-loading" alt="loading" />
         : <div className = "portfolio-page">
             <h1 className="hidden">{PORTFOLIO_TITLE}</h1>
             <h2 className="hidden">{PORTFOLIO_TITLE}</h2>
