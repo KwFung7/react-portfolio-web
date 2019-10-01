@@ -171,6 +171,11 @@
     font-size: 20px;
     margin: 50px 20px;
   }
+  .view-1 {
+    .react-swipeable-view-container {
+      max-height: 3300px !important;
+    }
+  }
   .view-extend-1 {
     .react-swipeable-view-container {
       max-height: 1700px !important;
