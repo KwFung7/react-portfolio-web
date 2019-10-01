@@ -37,7 +37,6 @@
   .portfolio-web-message {
     border-radius: 20px;
     width: 70%;
-    min-height: 159px;
     margin: 30px 15%;
     .portfolio-message-body {
       width: 80%;
@@ -47,7 +46,7 @@
   }
   .portfolio-intro-container {
     border-radius: 50px;
-    margin: 30px 50px;
+    margin: 30px 120px 100px;
     padding: 30px 50px;
 
     .portfolio-intro-general {
@@ -160,10 +159,6 @@
   .portfolio-contact {
     font-size: 25px;
     margin: 50px;
-  }
-  .portfolio-button {
-    margin: 0 50px 30px;
-    bottom: 4px;
   }
   .view-extend-1 {
     .react-swipeable-view-container {

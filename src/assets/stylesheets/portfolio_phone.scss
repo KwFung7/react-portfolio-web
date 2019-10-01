@@ -42,11 +42,9 @@
     }
   }
   .portfolio-web-message {
-    width: 100%;
-    min-height: 219px;
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0 1px 5px #888888;
-    margin-bottom: 40px;
+    border-radius: 20px;
+    width: 70%;
+    margin: 30px 15%;
     .portfolio-message-body {
       width: 80%;
       font-size: 12px;
@@ -55,7 +53,7 @@
   }
   .portfolio-intro-container {
     border-radius: 30px;
-    margin: 20px 10px;
+    margin: 20px 10px 100px;
     padding: 20px 20px;
 
     .portfolio-intro-general {
@@ -175,10 +173,6 @@
     font-size: 20px;
     margin: 50px 20px;
   }
-  .portfolio-button {
-    margin: 0 10px 20px;
-    bottom: 0;
-  }
   .view-extend-1 {
     .react-swipeable-view-container {
       max-height: 1700px !important;
@@ -193,5 +187,8 @@
     .react-swipeable-view-container {
       max-height: 1250px !important;
     }
+  }
+  .portfolio-copyright {
+    text-align: left;
   }
 }

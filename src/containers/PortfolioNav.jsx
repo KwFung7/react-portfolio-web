@@ -1,12 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
-import {Tabs, Tab } from 'material-ui/Tabs'
+import { Tabs, Tab } from 'material-ui/Tabs'
 import SwipeableViews from 'react-swipeable-views'
 import PortfolioIntro from './PortfolioIntro'
 import PortfolioProjects from './PortfolioProjects'
 import PortfolioContact from './PortfolioContact'
-import { INTRO, PROJECTS, CONTACT } from '../constants'
+import {INTRO, PROJECTS, CONTACT, TOP_BUTTON_LABEL} from '../constants'
+import ExpandLess from "material-ui-icons/ExpandLess";
+import { RaisedButton } from "material-ui";
 
 class PortfolioNav extends React.Component {
   constructor(props) {
@@ -51,18 +53,29 @@ class PortfolioNav extends React.Component {
           <Tab className = "portfolio-tab" label = {PROJECTS} value = {1} />
           <Tab className = "portfolio-tab" label = {CONTACT} value = {2} />
         </Tabs>
-        <SwipeableViews
-          className = {`portfolio-swipeable-view ${extend_projects_detail !== 0 && slideIndex === 1 ? `view-extend-${extend_projects_detail}` : `view-${slideIndex + 1}` }`}
-          ref = 'view'
-          index = {this.state.slideIndex}
-          onChangeIndex = {this.handleChange}
-          animateHeight = {true}
-          enableMouseEvents = {true}
-        >
-          <PortfolioIntro intro = {intro} handleScroll = {this.handleScroll} />
-          <PortfolioProjects projects = {projects} handleExtend = {this.handleExtend} />
-          <PortfolioContact contact = {contact} />
-        </SwipeableViews>
+        <div className="gradient-layer">
+          <SwipeableViews
+            className = {`portfolio-swipeable-view ${extend_projects_detail !== 0 && slideIndex === 1 ? `view-extend-${extend_projects_detail}` : `view-${slideIndex + 1}` }`}
+            ref = 'view'
+            index = {this.state.slideIndex}
+            onChangeIndex = {this.handleChange}
+            animateHeight = {true}
+            enableMouseEvents = {true}
+          >
+            <PortfolioIntro intro = {intro} />
+            <PortfolioProjects projects = {projects} handleExtend = {this.handleExtend} />
+            <PortfolioContact contact = {contact} />
+          </SwipeableViews>
+        </div>
+        <RaisedButton
+          label = {TOP_BUTTON_LABEL}
+          secondary = {true}
+          icon = {<ExpandLess />}
+          disableTouchRipple = {true}
+          className = "portfolio-button"
+          onClick = {this.handleScroll}
+          labelStyle = {{fontFamily: 'harabara', letterSpacing: '3px'}}
+        />
       </div>
     )
   }

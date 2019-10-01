@@ -2,9 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import moment from 'moment'
 import _ from 'lodash'
-import { RaisedButton } from 'material-ui'
 import { purple500 } from 'material-ui/styles/colors'
-import ExpandLess from 'material-ui-icons/ExpandLess'
 import Face from 'material-ui-icons/Face'
 import Typed from 'typed.js'
 import { 
@@ -13,7 +11,6 @@ import {
   AGE,
   DATE_OF_BIRTH,
   CURRENT_POSITION,
-  TOP_BUTTON_LABEL
 } from '../constants'
 
 class PortfolioIntro extends React.Component {
@@ -37,7 +34,7 @@ class PortfolioIntro extends React.Component {
     this.typed.destroy()
   }
   render() {
-    let { intro = {}, handleScroll = () => {} } = this.props;
+    let { intro = {} } = this.props;
     let { general, experience, skill, education, language } = intro;
 
     // Calculate age
@@ -147,22 +144,12 @@ class PortfolioIntro extends React.Component {
             </div>
           </div>
         </div>
-        <RaisedButton
-          label = {TOP_BUTTON_LABEL}
-          secondary = {true}
-          icon = {<ExpandLess />}
-          disableTouchRipple = {true}
-          className = "portfolio-button"
-          onClick = {() => { handleScroll() } }
-          labelStyle = {{fontFamily: 'harabara', letterSpacing: '3px'}}
-        />
       </div>
     )
   }
 }
 PortfolioIntro.defaultProps = {
   intro: {},
-  handleScroll: () => {}
 };
 PortfolioIntro.propTypes = {
   intro: PropTypes.object.isRequired,
