@@ -1,8 +1,8 @@
 // ------------------------ Phone ------------------------ //
 @media only screen and (max-width: 767px) {
   .portfolio-header-container {
-    padding-top: 18px;
-    padding-bottom: 18px;
+    height: 70px;
+    padding-top: 5px;
 
     .material-icons {
       display: none !important;
@@ -42,9 +42,9 @@
     }
   }
   .portfolio-web-message {
-    border-radius: 20px;
-    width: 70%;
-    margin: 30px 15%;
+    border-radius: 10px;
+    width: 80%;
+    margin: 30px 10%;
     .portfolio-message-body {
       width: 80%;
       font-size: 12px;
@@ -52,7 +52,7 @@
     }
   }
   .portfolio-intro-container {
-    border-radius: 30px;
+    border-radius: 10px;
     margin: 20px 10px 100px;
     padding: 20px 20px;
 
@@ -132,7 +132,7 @@
     width: 65px;
   }
   .portfolio-projects-details {
-    border-radius: 30px;
+    border-radius: 10px;
     margin: 20px 10px;
     padding: 30px 10px 80px;
     .portfolio-details-info {
@@ -190,5 +190,6 @@
   }
   .portfolio-copyright {
     text-align: left;
+    margin-left: 10px;
   }
 }

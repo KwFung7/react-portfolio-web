@@ -1,8 +1,8 @@
 // ------------------------ Desktop ------------------------ //
 @media only screen and (min-width: 992px) {
   .portfolio-header-container {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    height: 70px;
+    padding-top: 8px;
 
     .material-icons {
       position: absolute;
@@ -35,7 +35,7 @@
     }
   }
   .portfolio-web-message {
-    border-radius: 20px;
+    border-radius: 10px;
     width: 70%;
     margin: 40px 15%;
     .portfolio-message-body {
@@ -45,7 +45,7 @@
     }
   }
   .portfolio-intro-container {
-    border-radius: 50px;
+    border-radius: 10px;
     margin: 30px 120px 100px;
     padding: 30px 70px;
 
@@ -119,7 +119,7 @@
     width: 146px;
   }
   .portfolio-projects-details {
-    border-radius: 50px;
+    border-radius: 10px;
     margin: 30px 60px;
     padding: 40px 30px 100px;
     .portfolio-details-info {
@@ -141,7 +141,7 @@
     .portfolio-details-image {
       width: 90%;
       margin: 0 5%;
-      border-radius: 20px;
+      border-radius: 10px;
     }
     .slick-slider {
       display: none;

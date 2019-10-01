@@ -107,7 +107,7 @@ hr {
 }
 // ------------------------ View ------------------------ //
 .portfolio-swipeable-view {
-  height: calc(100vh - 123px);
+  height: calc(100vh - 118px);
   -webkit-overflow-scrolling: touch;
 }
 .view-1 {
@@ -345,11 +345,12 @@ hr {
 .portfolio-copyright {
   position: fixed;
   bottom: 0;
+  left: 0;
   text-align: center;
   letter-spacing: 2px;
   font-size: 12px;
   padding: 0;
-  z-index: -10;
+  z-index: 10;
 }
 
 // ------------------------ Gradient Layer ------------------- //
