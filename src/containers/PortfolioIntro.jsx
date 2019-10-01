@@ -153,6 +153,5 @@ PortfolioIntro.defaultProps = {
 };
 PortfolioIntro.propTypes = {
   intro: PropTypes.object.isRequired,
-  handleScroll: PropTypes.func.isRequired
 };
 export default PortfolioIntro
