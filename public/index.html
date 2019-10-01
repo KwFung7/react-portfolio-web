@@ -25,18 +25,26 @@
     -->
     <title>Portfolio</title>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+
+    <!-- Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
     <script>
-      // Initialize Firebase
-      var config = {
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
         apiKey: "AIzaSyBKbPhki51p3vwRuUN48-ZqcpMTuXKueUo",
         authDomain: "react-portfolio-web.firebaseapp.com",
         databaseURL: "https://react-portfolio-web.firebaseio.com",
         projectId: "react-portfolio-web",
         storageBucket: "react-portfolio-web.appspot.com",
-        messagingSenderId: "388216307968"
+        messagingSenderId: "388216307968",
+        appId: "1:388216307968:web:489c1b433672fc18e8b3e5"
       };
-      firebase.initializeApp(config);
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
     </script>
   </head>
   <body>
