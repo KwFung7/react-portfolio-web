@@ -98,6 +98,8 @@ hr {
       text-transform: none;
       letter-spacing: 4px;
       color: black;
+      transition: font-size .5s ease-in-out, font-weight .5s ease-in-out;
+
       &:hover, &:active {
         font-weight: bold;
         font-size: 115%;
@@ -269,6 +271,7 @@ hr {
   background-repeat: no-repeat;
   background-size: contain;
   box-shadow: 7px 7px 10px #888888;
+  transition: transform .5s ease-in-out;
 }
 .icon-hover:hover {
   cursor: pointer;

@@ -127,9 +127,7 @@
     width: 60px;
   }
   .icon-hover:hover {
-    margin: 0 10px 14px;
-    height: 65px;
-    width: 65px;
+    transform: scale(1.05);
   }
   .portfolio-projects-details {
     border-radius: 10px;
