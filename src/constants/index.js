@@ -37,3 +37,6 @@ export const TIMER_INTERVAL = 1000;
 export const NO_MATCH_STATUS = '404.';
 export const NOT_FOUND = 'Not Found';
 export const NO_MATCH_FOR = 'No match for ';
+
+// Maintainance
+export const MAINTAINANCE_MSG = 'Maintainance take place during HKT 2AM - 7AM';
