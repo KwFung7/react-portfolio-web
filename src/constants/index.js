@@ -3,9 +3,7 @@ export const ROOT = '/';
 export const PORTFOLIO_ROUTE = '/portfolio';
 
 // API
-export const API_HOST_URL = process.env.NODE_ENV === 'development'
-  ? 'http://localhost:5000'
-  : 'https://admin.kwfxng.com';
+export const API_HOST_URL = 'https://api.kwfxng.com';
 
 // Page
 export const PORTFOLIO_TITLE = 'Portfolio web by Felix Kwan';
