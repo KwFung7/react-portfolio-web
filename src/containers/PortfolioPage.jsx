@@ -11,7 +11,8 @@ class PortfolioPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      portfolio: {}
+      portfolio: {},
+      setting: {}
     }
   }
 
@@ -29,14 +30,27 @@ class PortfolioPage extends Component {
       .catch(() => {
         console.log('Fail to load portfolio.')
       })
+
+    const settingConfig = {
+      method: 'GET',
+      url: `${API_HOST_URL}/api/v1/setting`
+    };
+    axios(settingConfig)
+      .then((res) => {
+        const { data = [] } = res;
+        this.setState({ setting: _.head(data) })
+      })
+      .catch(() => {
+        console.log('Fail to load system settings.')
+      })
   }
 
   render () {
-    const { portfolio = {} } = this.state;
+    const { portfolio = {}, setting = {} } = this.state;
     let copyright = COPYRIGHT.replace('[currentYear]', moment().year());
 
     return (
-      _.isEmpty(portfolio)
+      _.isEmpty(portfolio) || _.isEmpty(setting)
         ? (
           <div className="api-loading">
             <img src="/images/spinner.gif" className="loading-img" alt="loading" />
