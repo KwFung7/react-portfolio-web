@@ -44,10 +44,6 @@ export const MAINTAINANCE_MSG = 'Maintainance take place during HKT 2AM - 7AM';
 // Pawwell Privacy Policy
 export const PAWWELL_PRIVACY_POLICY_TITLE = 'Pawwell Privacy Policy';
 export const PAWWELL_PRIVACY_POLICY_CONTENT = `
-Last Updated: April 2026
-
-Welcome to PawWell. We are committed to protecting your personal information and your right to privacy.
-
 1. Information We Collect
 We collect personal information that you voluntarily provide to us when registering at PawWell, expressing an interest in obtaining information about us or our products and services.
 The personal information that we collect depends on the context of your interactions with us and the App, the choices you make and the products and features you use.

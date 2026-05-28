@@ -1,0 +1,96 @@
+.privacy-policy {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+}
+
+.privacy-policy-header {
+  width: 100%;
+  background-color: black;
+  font-family: 'harabara';
+  opacity: 0.8;
+  letter-spacing: 6px;
+  text-align: center;
+
+  .privacy-policy-title {
+    color: white;
+    margin: 0;
+    padding: 15px 0;
+    font-size: 28px;
+    letter-spacing: 6px;
+  }
+}
+
+.privacy-policy-content {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 30px 20%;
+  font-family: 'harabara';
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+  color: rgba(30%, 30%, 30%, 1);
+  -webkit-animation: fadein 1.5s;
+  -moz-animation: fadein 1.5s;
+  -ms-animation: fadein 1.5s;
+  -o-animation: fadein 1.5s;
+  animation: fadein 1.5s;
+
+  .privacy-policy-updated {
+    font-size: 14px;
+    color: grey;
+    margin-bottom: 20px;
+  }
+
+  .privacy-policy-intro {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+
+.privacy-policy-section {
+  background-color: rgba(94.1%, 98%, 76.5%, 0.4);
+  box-shadow: 3px 3px 10px #888888;
+  border-radius: 10px;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+
+  -webkit-animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -ms-animation: fadein 3s;
+  -o-animation: fadein 3s;
+  animation: fadein 3s;
+
+  .privacy-policy-section-heading {
+    font-family: 'harabara';
+    font-size: 22px;
+    margin: 0 0 15px;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+
+  .privacy-policy-text {
+    font-size: 15px;
+    margin: 0 0 12px;
+    line-height: 1.8;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.privacy-policy-footer {
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+  text-align: center;
+
+  .privacy-policy-copyright {
+    color: white;
+    font-family: 'harabara';
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 8px 0;
+  }
+}
